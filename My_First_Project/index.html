@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/queries.css">
+
+  <script defer src="https://unpkg.com/
+     smoothscroll-polyfill@0.4.4/dist/
+     smoothscroll.min.js">
+    </script>
+  <script defer src="Js/script.js"></script>
   <title>EmbedSocial &mdash; Making life easier!</title>
 </head>
 
@@ -31,18 +37,22 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="list-icon">
-            <a href="#" class="main-nav-link">Platform</a>
+            <a href="#platform" class="main-nav-link">Platform</a>
             <ion-icon name="chevron-down-outline" class="main-nav-list-icon"></ion-icon>
           </li>
-          <li><a href="#" class="main-nav-link">Widgets</a></li>
-          <li><a href="#" class="main-nav-link">Templates</a></li>
-          <li><a href="#" class="main-nav-link">Pricing</a></li>
+          <li><a href="#widgets" class="main-nav-link">Widgets</a></li>
+          <li><a href="#templates" class="main-nav-link">Templates</a></li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a class="main-nav-link" href="#login" class=" link login">Login</a>
+          </li>
+          <li><a class="main-nav-link" href="#free-trial" class=" link free-trial">Start free trial</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <a href="#" class=" link login">Login</a>
-        <a href="#" class=" link free-trial">Start free trial</a>
-      </div>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </div>
   </header>
 
@@ -73,7 +83,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="hero">
       <div class="container sectiion-how-grid">
         <div class="how-img-box">
           <div class="how-img-head">
@@ -153,7 +163,7 @@
       </div>
     </section>
 
-    <section class="section-double">
+    <section class="section-double" id="login">
       <div class="container ctn">
         <h2 class="heading-secondary fir-h2">Double your <span class="h-p-span">conversions.</span></h2>
         <h2 class="heading-secondary sec-h2">Double your <span class="h-p-span">growth.</span></h2>
@@ -210,10 +220,10 @@
         <p class="p-description clr">Start with one of our pre-designed templates. Create, personalize
           and <br>embed the perfect widget for any page or campaign in just minutes.
         </p>
-        <a href="#" class=" link free-trial">See templates demos &dbkarow;</a>
+        <a href="#hero" class=" link free-trial">See templates demos &dbkarow;</a>
         <div class="started-card">
           <div class="str-card-cont">
-            <img src="./img/section-started/preview-story-widget.png" alt="Preview story widget">
+            <img class="popover-img" src="./img/section-started/preview-story-widget.png" alt="Preview story widget">
             <div class="str-card-text">
               <h4>Popover</h4>
               <p>Showcases on every page that <br> gives the feel of a living & <br>
@@ -274,27 +284,27 @@
           of the instagram stories on your website.
         </p>
         <div class="custo-link">
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="log-out-outline"></ion-icon>
             <span>Stories from specific dates</span>
           </a>
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="prism-outline"></ion-icon>
             <span>Customize color</span>
           </a>
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="location-outline"></ion-icon>
             <span>Follow button</span>
           </a>
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="repeat-outline"></ion-icon>
             <span>Multiple layouts</span>
           </a>
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="navigate-circle-outline"></ion-icon>
             <span>Advanced moderation</span>
           </a>
-          <a href="#" class="custo-icon">
+          <a href="#hero" class="custo-icon">
             <ion-icon class="cards-icon" name="laptop-outline"></ion-icon>
             <span>Custom css</span>
           </a>
@@ -306,35 +316,35 @@
                 <img src="./img/aside.png" alt="aside logo">
               </div>
               <div class="aside-icon-ctn">
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Dashboard</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>All stories</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Widgets</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Gallaries</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Highlights</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Bookend</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Ads</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Reports</span>
                 </a>
@@ -343,11 +353,11 @@
             <div class="settings">
               <p>SETTINGS &mdash;</p>
               <div class="aside-icon-ctn">
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Sources</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Social Accounts</span>
                 </a>
@@ -356,11 +366,11 @@
             <div class="other">
               <p>OTHER &mdash;</p>
               <div class="aside-icon-ctn">
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Integrations</span>
                 </a>
-                <a href="#" class="aside-icon">
+                <a href="#hero" class="aside-icon">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Help</span>
                 </a>
@@ -377,27 +387,27 @@
             <div class="custo-main-text">
               <h3 class="heading-tertiary"><strong>Edit Feed:</strong>Recipe Book</h3>
               <div class="custo-main-link">
-                <a href="#" class="main-icon">
+                <a href="#hero" class="main-icon">
                   <ion-icon class="cards-icon" name="eye-outline"></ion-icon>
                   <span>Preview</span>
                 </a>
-                <a href="#" class="main-icon">
+                <a href="#hero" class="main-icon">
                   <ion-icon class="cards-icon" name="flash-outline"></ion-icon>
                   <span>Amp Story</span>
                 </a>
-                <a href="#" class="main-icon mgn">
+                <a href="#hero" class="main-icon mgn">
                   <ion-icon class="cards-icon" name="bar-chart-outline"></ion-icon>
                   <span>Links</span>
                 </a>
-                <a href="#" class="main-icon">
+                <a href="#hero" class="main-icon">
                   <ion-icon class="cards-icon" name="settings-outline"></ion-icon>
                   <span>Moderate</span>
                 </a>
-                <a href="#" class="main-icon">
+                <a href="#hero" class="main-icon">
                   <ion-icon class="cards-icon" name="checkbox-outline"></ion-icon>
                   <span>Selected Media</span>
                 </a>
-                <a href="#" class="main-icon">
+                <a href="#hero" class="main-icon">
                   <ion-icon class="cards-icon" name="bar-chart-outline"></ion-icon>
                   <span>Reports</span>
                 </a>
@@ -406,7 +416,7 @@
             <div class="recipe">
               <div class="recipe-text">
                 <h4><strong>Recipe Book</strong></h4>
-                <a href="#" class="follow">
+                <a href="#hero" class="follow">
                   <ion-icon class="cards-icon" name="list-circle-outline"></ion-icon>
                   <span>Follow Us</span>
                 </a>
@@ -423,14 +433,14 @@
       </div>
     </section>
 
-    <section class="section-installation">
+    <section class="section-installation" id="platform">
       <div class="container ctn">
-        <div href="#" class="custo-img">
+        <div class="custo-img">
           <img src="./img/section-installation/btn-Installation.png" alt="Customization">
         </div>
         <h2 class="heading-secondary">Embed it and forget it</h2>
         <ul class="p-list">
-          <li class="p-list-item">
+          <li class="-list-item">
             <ion-icon class="p-list-icon" name="checkmark-outline"></ion-icon>
             <span>Simple installation. No developers needed</span>
           </li>
@@ -455,27 +465,25 @@
             <div class="implentation-img">
               <ul class="imple-list">
                 <li class="imple-list-item active">
-                  <img src="./img/section-installation/html.png" alt="html logo">
+                  <img class="imp-li-img" src="./img/section-installation/html.png" alt="html logo">
                   <p>Html</p>
                 </li>
                 <li class="imple-list-item">
-                  <img src="./img/section-installation/wordpress.png" alt="wordpress logo">
+                  <img class="wordpress" src="./img/section-installation/wordpress.png" alt="wordpress logo">
                   <p>Wordpress</p>
                 </li>
                 <li class="imple-list-item">
-                  <img src="./img/section-installation/shopify.png" alt="shopify logo">
+                  <img class="imp-li-img" src="./img/section-installation/shopify.png" alt="shopify logo">
                   <p>Shopify</p>
                 </li>
-                <li class="imple-list-item emp">
-                  <p>Other</p>
-                </li>
+
               </ul>
             </div>
             <p class="code-text">If you are not using any web builder, just add/paste the
               provided code in your <br> website < body> in the position where
                 you want the reviews to appear
             </p>
-            <img src="./img/section-installation/code.png" alt="copy code">
+            <img class="copy-code-img" src="./img/section-installation/code.png" alt="copy code">
             <button class="link btn focus-button">
               <> Copy Code
             </button>
@@ -491,7 +499,7 @@
             </div>
             <h2 class="heading-secondary int">Works with 99.9% of <br>web platforms</h2>
             <p class="p-description p-int">We integrate with tons of other apps, ecoomerce
-              platforms or <br>web builders. Native apps are available, too.
+              platforms or web builders. Native apps are available, too.
             </p>
             <ul class="p-list int-list">
               <li class="p-list-item">
@@ -526,7 +534,7 @@
             <form action="#" class="hero-form-input">
               <input id="email" type="email" name="email" placeholder="Enter your email..." required>
             </form>
-            <a href="#" class="link hero-form-a">Start free-trial &dbkarow;</a>
+            <a href="#hero" class="link hero-form-a">Start free-trial &dbkarow;</a>
           </button>
           <ul class="cta-list">
             <li class="cta-list-item mn">Free 7-day trial</li>
@@ -625,10 +633,10 @@
       </div>
     </section>
 
-    <section class="section-other">
+    <section class="section-other" id="widgets">
       <div class="container">
         <h2 class="heading-secondary ctn">Other features at your service</h2>
-        <div class=" grid grid--4-cols">
+        <div class=" grid grid--4-cols sec-other-grid">
           <div class="other-ctn">
             <ion-icon class="other-icon" name="sync-outline"></ion-icon>
             <p class="other-p">Auto-sync</p>
@@ -690,7 +698,7 @@
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="templates">
       <div class="container">
         <div class="testimonials">
           <div class="testimonial-text">
@@ -708,7 +716,7 @@
       </div>
     </section>
 
-    <section class="section-feedback">
+    <section class="section-feedback" id="free-trial">
       <div class="container">
         <h2 class="heading-secondary ctn">Our customers love EmbedStories</h2>
         <p class="p-description rated"><strong>Rated 4.8</strong> by our customers on Facebook and Google</p>
@@ -791,7 +799,7 @@
       </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container">
         <div class="ctn">
           <h2 class="heading-secondary">Try all EmbedStories features, 7days free.</h2>
@@ -1056,7 +1064,7 @@
         </div>
       </div>
     </section>
-    <section class="section-featured-in">
+    <section class="section-featured-in" id="login">
       <div class="container ctn featured-in">
         <h2 class="heading-secondary fir-h2">From the creators of EmbedSocial trusted.</h2>
         <h2 class="heading-secondary sec-h2">and displayed on <span class="h-p-span">50,000+ websites</span></h2>
@@ -1094,40 +1102,42 @@
           <a href="#">
             <img src="./img/Group 336.png" alt="Footer Img">
           </a>
-          <p class="logo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et beatae deleniti,
-            temporibusinventore,aspernatur culpa</p>
+          <p class="logo-p">Lorem ipsum dolor sit amet
+            copyright &copy; by <span class="year">2027</span> by Omnifood, Inc. All rights
+            reserved.
+          </p>
         </div>
         <div class="product-col">
           <p class="footer-header">Product</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" class="footer-link" href="#">Reviews management</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Embed Instagram stories</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Display Instagram feeds</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Collect reviews</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Send email requests</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Reviews management</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Embed Instagram stories</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Display Instagram feeds</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Collect reviews</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Send email requests</a></li>
           </ul>
         </div>
-        <div class="product-col">
+        <div class="company-col">
           <p class="footer-header">Company</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" class="footer-link" href="#">About EmbedSocial</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Grand Guidelines</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Press Kit</a></li>
-            <li><a class="footer-link" class="footer-link" href="#">Support</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">About EmbedSocial</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Grand Guidelines</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Press Kit</a></li>
+            <li><a class="footer-link" class="footer-link" href="#hero">Support</a></li>
           </ul>
         </div>
-        <div class="product-col">
+        <div class="integration">
           <p class="footer-header">Integrations</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Wordpress</a></li>
-            <li><a class="footer-link" href="#">Shopify</a></li>
-            <li><a class="footer-link" href="#">Magneto</a></li>
-            <li><a class="footer-link" href="#">Squareapce</a></li>
-            <li><a class="footer-link" href="#">Intercom</a></li>
-            <li><a class="footer-link" href="#">Slack</a></li>
+            <li><a class="footer-link" href="#hero">Wordpress</a></li>
+            <li><a class="footer-link" href="#hero">Shopify</a></li>
+            <li><a class="footer-link" href="#hero">Magneto</a></li>
+            <li><a class="footer-link" href="#hero">Squareapce</a></li>
+            <li><a class="footer-link" href="#hero">Intercom</a></li>
+            <li><a class="footer-link" href="#hero">Slack</a></li>
           </ul>
         </div>
-        <div class="product-col">
+        <div class="integration-2">
           <p class="footer-header">Integrations</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="#">Wordpress</a></li>
@@ -1140,7 +1150,7 @@
         </div>
       </div>
     </footer>
-
+    <ion-icon name="arrow-down-outline"></ion-icon>
   </main>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
